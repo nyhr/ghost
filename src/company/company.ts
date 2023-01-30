@@ -1,24 +1,46 @@
-export default class company {
+export default class Company {
 	
-	private _id : number | any;
-	public get id() : number | any {
+	private _id : string | number;
+	private _name: string;
+
+
+	constructor(id: string | number , name: string) {
+		this._id = id;
+		this._name = name;
+	}
+
+
+    /**
+     * Getter id
+     * @return {string }
+     */
+	public get id(): string | number  {
 		return this._id;
 	}
-	public set id(v : number | any) {
-		this._id = v;
+
+    /**
+     * Setter id
+     * @param {string } value
+     */
+	public set id(value: string | number ) {
+		this._id = value;
 	}
-	
-	private _name : string;
-	public get name() : string {
+
+    /**
+     * Getter name
+     * @return {string}
+     */
+	public get name(): string {
 		return this._name;
 	}
-	public set name(v : string) {
-		this._name = v;
+
+    /**
+     * Setter name
+     * @param {string} value
+     */
+	public set name(value: string) {
+		this._name = value;
 	}
-	
-	constructor(id: number | any, name: string) {
-		this._id = id
-		this._name = name
-	}
+
 	
 }

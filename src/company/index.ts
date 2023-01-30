@@ -1,4 +1,3 @@
-import company from "./company";
-export default {
-	company: company
-}
+import Company from "./company";
+
+export default Company
