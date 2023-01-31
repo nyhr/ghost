@@ -1,5 +1,5 @@
 import User from "./index"
-describe('pass', () => {
+describe('Testing User Class', () => {
 	let usr = new User(2,'test','1234','test@test.com','Test','Mctesterson',1,1)
 	
 	test('User id test ',() => {

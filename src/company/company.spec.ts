@@ -2,7 +2,7 @@ import { string } from 'yargs';
 import company from "./company";
 import {v4 as uuid} from "uuid"
 
-describe('testing company class', () => {
+describe('Testing Company Class', () => {
 
 	let cmp = new company(uuid(),'Test')
 

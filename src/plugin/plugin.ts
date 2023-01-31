@@ -1,14 +1,14 @@
-export default class Company {
-	
-	private _id : string | number;
+export default class Plugin {
+	private _id: string | number;
 	private _name: string;
+	private _application_id: string | number;
 
 
-	constructor(id: string | number , name: string) {
+	constructor(id: string | number , name: string, application_id: string | number ) {
 		this._id = id;
 		this._name = name;
+		this._application_id = application_id;
 	}
-
 
     /**
      * Getter id
@@ -42,5 +42,20 @@ export default class Company {
 		this._name = value;
 	}
 
-	
+    /**
+     * Getter application_id
+     * @return {string | number }
+     */
+	public get application_id(): string | number  {
+		return this._application_id;
+	}
+
+    /**
+     * Setter application_id
+     * @param {string | number } value
+     */
+	public set application_id(value: string | number ) {
+		this._application_id = value;
+	}
+
 }
